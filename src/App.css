@@ -1084,3 +1084,14 @@ button, input { font: inherit; }
     min-height: 145px !important;
   }
 }
+/* ===== 3枚観測カード画像を見やすくする ===== */
+
+.observation-card.three-card .card-image {
+  display: block !important;
+  width: 76px !important;
+  height: 76px !important;
+  object-fit: contain !important;
+  opacity: 1 !important;
+  filter: contrast(2.6) saturate(2) brightness(0.75) drop-shadow(0 0 6px rgba(0, 104, 255, 0.32)) !important;
+  margin: 8px auto 12px !important;
+}
