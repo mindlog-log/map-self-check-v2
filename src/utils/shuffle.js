@@ -44,7 +44,7 @@ export function shuffleDeck(cardsData) {
     return {
       ...card,
       stateCode,
-      text: stateCode === "A" ? card.uprightText : card.abnormalText,
+      text: stateCode === "A" ? card.upright : card.reversed,
     };
   });
 }
