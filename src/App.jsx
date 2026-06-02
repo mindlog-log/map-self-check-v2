@@ -316,10 +316,20 @@ function ObservationCard({ card, mode }) {
     <article className={`observation-card ${isNineMode ? "nine-card" : "three-card"}`}>
       <div className="card-meta">
         <span className="card-number">{card.id}</span>
-        <span className="card-code">{card.group}｜{card.stateCode}</span>
+        <span className="card-code">{card.group} | {card.stateCode}</span>
       </div>
-      {!isNineMode && <img src={attribute.image} alt={attribute.name} />}
-      <p>{card.text}</p>
+
+      {!isNineMode && (
+        <img
+          src={attribute.image}
+          alt={attribute.name}
+          className="card-image"
+        />
+      )}
+
+      <p className="card-text">
+        {card.text}
+      </p>
     </article>
   );
 }
