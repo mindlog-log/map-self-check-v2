@@ -311,25 +311,76 @@ function ResultScreen({ mode, resultCards, onBack, onHome, openGuide }) {
 function ObservationCard({ card, mode }) {
   const attribute = ATTRIBUTES[card.group];
   const isNineMode = mode === 9;
+  const displayText =
+    card.text ||
+    (card.stateCode === "A" ? card.uprightText : card.abnormalText) ||
+    "テキスト未設定";
 
   return (
-    <article className={`observation-card ${isNineMode ? "nine-card" : "three-card"}`}>
-      <div className="card-meta">
-        <span className="card-number">{card.id}</span>
-        <span className="card-code">{card.group} | {card.stateCode}</span>
+    <article
+      className={`observation-card ${isNineMode ? "nine-card" : "three-card"}`}
+      style={{
+        minHeight: isNineMode ? "145px" : "265px",
+        padding: isNineMode ? "10px 7px" : "12px 8px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "flex-start",
+        overflow: "visible"
+      }}
+    >
+      <div
+        style={{
+          width: "100%",
+          textAlign: "center",
+          color: "#0068ff",
+          fontWeight: 700,
+          fontSize: isNineMode ? "15px" : "16px",
+          lineHeight: 1.25,
+          marginBottom: "8px"
+        }}
+      >
+        <div style={{ fontSize: "10px", color: "#061a3a", fontWeight: 500, marginBottom: "4px" }}>
+          {card.id}
+        </div>
+        <div>
+          {card.group} <span style={{ opacity: 0.65 }}>|</span> {card.stateCode}
+        </div>
       </div>
 
       {!isNineMode && (
         <img
           src={attribute.image}
           alt={attribute.name}
-          className="card-image"
+          style={{
+            width: "54px",
+            height: "54px",
+            objectFit: "contain",
+            opacity: 1,
+            margin: "6px auto 8px",
+            display: "block"
+          }}
         />
       )}
 
-      <p className="card-text">
-        {card.text}
-      </p>
+      <div
+        style={{
+          display: "block",
+          visibility: "visible",
+          opacity: 1,
+          width: "100%",
+          color: "#061a3a",
+          textAlign: "center",
+          fontSize: isNineMode ? "11px" : "12px",
+          lineHeight: isNineMode ? 1.35 : 1.45,
+          marginTop: isNineMode ? "4px" : "8px",
+          wordBreak: "keep-all",
+          overflowWrap: "break-word",
+          whiteSpace: "normal"
+        }}
+      >
+        {displayText}
+      </div>
     </article>
   );
 }
