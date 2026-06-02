@@ -810,3 +810,155 @@ button, input { font: inherit; }
   .role-row, .state-row { grid-template-columns: 42px 1fr; }
   .role-row span, .state-row span { grid-column: 2; }
 }
+  .role-row span, .state-row span { grid-column: 2; }
+}
+
+/* ===== MAP Self Check display fix ===== */
+
+/* ここから下に、さっきのCSSを全部貼る */
+/* ==== MAP Self Check display fix ==== */
+
+/* ここから下に、さっきのCSSを全部貼る */
+
+.result-grid,
+.cards-grid {
+  width: 100%;
+}
+
+.observation-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.observation-card img,
+.card-visual img,
+.card-image {
+  display: block;
+  width: 86px;
+  height: 86px;
+  object-fit: contain;
+  opacity: 0.95;
+  margin: 14px auto 10px;
+}
+
+.card-topline,
+.card-meta {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.card-text {
+  width: 100%;
+  text-align: center;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.guide-card img,
+.role-card img,
+.three-card img,
+.guide-section img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  opacity: 0.9;
+  margin: 0 auto;
+  position: static;
+  transform: none;
+}
+
+.role-item img,
+.role-row img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  opacity: 0.85;
+  flex-shrink: 0;
+}
+
+.three-card,
+.three-card-preview,
+.position-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.three-card img,
+.three-card-preview img,
+.position-card img {
+  margin: 10px auto 0;
+}
+
+@media (max-width: 760px) {
+  .screen {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .grid-3,
+  .cards-grid.grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .grid-9,
+  .cards-grid.grid-9 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .observation-card {
+    min-height: 235px;
+    padding: 10px 6px;
+    border-radius: 16px;
+  }
+
+  .observation-card img,
+  .card-visual img,
+  .card-image {
+    width: 58px;
+    height: 58px;
+    margin: 12px auto 8px;
+  }
+
+  .card-topline,
+  .card-meta {
+    font-size: 10px;
+    line-height: 1.2;
+    gap: 4px;
+  }
+
+  .attribute-code,
+  .state-code {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
+
+  .card-text {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 8px;
+  }
+
+  .guide-grid,
+  .guide-sections {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-card img,
+  .role-card img,
+  .three-card img,
+  .guide-section img {
+    width: 54px;
+    height: 54px;
+  }
+}
+}
