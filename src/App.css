@@ -810,8 +810,7 @@ button, input { font: inherit; }
   .role-row, .state-row { grid-template-columns: 42px 1fr; }
   .role-row span, .state-row span { grid-column: 2; }
 }
-  .role-row span, .state-row span { grid-column: 2; }
-}
+ 
 
 /* ===== MAP Self Check display fix ===== */
 
