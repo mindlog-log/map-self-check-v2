@@ -960,4 +960,127 @@ button, input { font: inherit; }
     height: 54px;
   }
 }
+/* ===== MAP Self Check result text visibility fix v2 ===== */
 
+.result-screen .cards-grid {
+  width: 100%;
+  align-items: stretch;
+}
+
+.result-screen .observation-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  overflow: visible !important;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.result-screen .card-topline {
+  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 4px !important;
+  flex-wrap: wrap !important;
+  color: #005cff !important;
+  opacity: 1 !important;
+  font-weight: 600;
+}
+
+.result-screen .card-meta {
+  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  color: #0068ff !important;
+  opacity: 1 !important;
+  font-weight: 700;
+}
+
+.result-screen .card-text {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: #061a3a !important;
+  width: 100% !important;
+  text-align: center !important;
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
+  margin: 8px 0 0 !important;
+}
+
+/* 3枚観測：絵と文章を両方見せる */
+.result-screen .grid-3 .observation-card {
+  min-height: 270px !important;
+  padding: 12px 8px !important;
+}
+
+.result-screen .grid-3 .observation-card img {
+  display: block !important;
+  width: 54px !important;
+  height: 54px !important;
+  object-fit: contain !important;
+  opacity: 1 !important;
+  margin: 12px auto 8px !important;
+}
+
+.result-screen .grid-3 .card-text {
+  font-size: 12px !important;
+  line-height: 1.45 !important;
+}
+
+/* 9枚観測：絵は消して、文章を優先する */
+.result-screen .grid-9 {
+  gap: 10px !important;
+}
+
+.result-screen .grid-9 .observation-card {
+  min-height: 150px !important;
+  padding: 10px 7px !important;
+}
+
+.result-screen .grid-9 .observation-card img {
+  display: none !important;
+}
+
+.result-screen .grid-9 .card-topline {
+  font-size: 10px !important;
+  line-height: 1.2 !important;
+}
+
+.result-screen .grid-9 .attribute-code,
+.result-screen .grid-9 .state-code {
+  font-size: 16px !important;
+}
+
+.result-screen .grid-9 .card-text {
+  font-size: 11px !important;
+  line-height: 1.35 !important;
+  margin-top: 8px !important;
+}
+
+/* スマホ幅の最終調整 */
+@media (max-width: 760px) {
+  .result-screen .screen {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .result-screen .grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+
+  .result-screen .grid-9 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 9px !important;
+  }
+
+  .result-screen .grid-3 .observation-card {
+    min-height: 265px !important;
+  }
+
+  .result-screen .grid-9 .observation-card {
+    min-height: 145px !important;
+  }
+}
