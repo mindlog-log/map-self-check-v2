@@ -1660,3 +1660,15 @@ button, input { font: inherit; }
     font-size: 20px !important;
   }
 }
+/* ===== 緊急修正：TOP・観測準備画面のスクロールを戻す ===== */
+
+@media (max-width: 760px) {
+  .home-panel,
+  .observe-panel {
+    height: auto !important;
+    min-height: 100dvh !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    padding-bottom: 32px !important;
+  }
+}
