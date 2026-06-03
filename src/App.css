@@ -1460,3 +1460,203 @@ button, input { font: inherit; }
     font-size: 22px !important;
   }
 }
+/* ===== スマホ1画面用：TOP・観測準備 最終コンパクト調整 ===== */
+
+@media (max-width: 760px) {
+  /* TOP/準備画面だけ、1画面アプリ風にする */
+  .home-panel,
+  .observe-panel {
+    height: 100dvh !important;
+    min-height: 100dvh !important;
+    overflow: hidden !important;
+    padding: 18px 28px 16px !important;
+    box-sizing: border-box !important;
+    border-radius: 0 !important;
+  }
+
+  /* ヘッダーを小さく */
+  .home-panel .header-row,
+  .observe-panel .header-row {
+    margin-bottom: 14px !important;
+    align-items: center !important;
+  }
+
+  .home-panel .brand img,
+  .observe-panel .brand img {
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  .home-panel .brand span,
+  .observe-panel .brand span {
+    font-size: 22px !important;
+    line-height: 1 !important;
+  }
+
+  .home-panel .mini-nav,
+  .observe-panel .mini-nav,
+  .home-panel .ghost-button,
+  .observe-panel .ghost-button {
+    width: 54px !important;
+    height: 54px !important;
+    min-height: 54px !important;
+    border-radius: 16px !important;
+    font-size: 11px !important;
+  }
+
+  /* ===== TOP画面 ===== */
+
+  .home-panel .hero {
+    margin: 18px 0 14px !important;
+  }
+
+  .home-panel .hero h1 {
+    font-size: 34px !important;
+    line-height: 1.05 !important;
+    letter-spacing: 0.02em !important;
+    margin: 0 0 10px !important;
+  }
+
+  .home-panel .hero p {
+    font-size: 16px !important;
+    line-height: 1.3 !important;
+    margin: 0 !important;
+  }
+
+  .home-panel .energy-wave {
+    height: 30px !important;
+    margin: 6px 0 16px !important;
+  }
+
+  .home-panel .section-title,
+  .home-panel .mode-title {
+    margin: 8px 0 10px !important;
+    font-size: 20px !important;
+    line-height: 1.2 !important;
+  }
+
+  .home-panel .mode-section,
+  .home-panel .selection-block {
+    margin: 8px 0 10px !important;
+  }
+
+  .home-panel .mode-card,
+  .home-panel .option-card {
+    min-height: 74px !important;
+    padding: 10px 14px !important;
+    border-radius: 18px !important;
+  }
+
+  .home-panel .mode-card strong,
+  .home-panel .option-card strong {
+    font-size: 24px !important;
+    line-height: 1.05 !important;
+  }
+
+  .home-panel .mode-card small,
+  .home-panel .option-card small {
+    font-size: 15px !important;
+    line-height: 1.15 !important;
+  }
+
+  .home-panel .mode-copy,
+  .home-panel .mode-card em,
+  .home-panel .option-card em {
+    font-size: 13px !important;
+    line-height: 1.15 !important;
+  }
+
+  .home-panel .admin-box {
+    margin: 8px 0 !important;
+    font-size: 13px !important;
+  }
+
+  .home-panel .primary-button {
+    min-height: 50px !important;
+    height: 50px !important;
+    margin: 10px 0 8px !important;
+    border-radius: 999px !important;
+    font-size: 21px !important;
+  }
+
+  .home-panel .usage {
+    margin: 4px 0 0 !important;
+    font-size: 18px !important;
+    line-height: 1.1 !important;
+  }
+
+  .home-panel .usage strong {
+    font-size: 30px !important;
+  }
+
+  /* ===== 観測準備画面 ===== */
+
+  .observe-panel .page-title {
+    margin: 10px 0 10px !important;
+  }
+
+  .observe-panel .page-title h2 {
+    font-size: 34px !important;
+    line-height: 1.05 !important;
+    margin: 0 0 8px !important;
+    letter-spacing: 0.02em !important;
+  }
+
+  .observe-panel .title-line {
+    margin: 6px auto 10px !important;
+    height: 4px !important;
+  }
+
+  .observe-panel .page-title p {
+    font-size: 16px !important;
+    line-height: 1.45 !important;
+    margin: 0 auto 10px !important;
+    max-width: 320px !important;
+  }
+
+  .observe-panel .mode-pill {
+    min-height: 40px !important;
+    height: 40px !important;
+    padding: 6px 22px !important;
+    margin: 8px auto 12px !important;
+    font-size: 20px !important;
+    border-radius: 999px !important;
+  }
+
+  .observe-panel .shuffle-button {
+    width: 178px !important;
+    height: 178px !important;
+    min-height: 178px !important;
+    margin: 8px auto 12px !important;
+    border-width: 8px !important;
+  }
+
+  .observe-panel .shuffle-button .shuffle-icon {
+    font-size: 36px !important;
+    margin-bottom: 4px !important;
+  }
+
+  .observe-panel .shuffle-button span {
+    font-size: 22px !important;
+    line-height: 1.15 !important;
+  }
+
+  .observe-panel .shuffle-count {
+    margin: 6px 0 10px !important;
+    font-size: 19px !important;
+    line-height: 1.1 !important;
+  }
+
+  .observe-panel .shuffle-count strong {
+    font-size: 36px !important;
+  }
+
+  .observe-panel .outline-button,
+  .observe-panel .secondary-button {
+    min-height: 50px !important;
+    height: 50px !important;
+    margin: 8px 0 0 !important;
+    border-radius: 999px !important;
+    font-size: 20px !important;
+  }
+}
