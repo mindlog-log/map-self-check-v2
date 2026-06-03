@@ -1095,3 +1095,7 @@ button, input { font: inherit; }
   filter: contrast(2.6) saturate(2) brightness(0.75) drop-shadow(0 0 6px rgba(0, 104, 255, 0.32)) !important;
   margin: 8px auto 12px !important;
 }
+/* 説明書01の装飾マークを非表示 */
+.guide-orbit {
+  display: none !important;
+}
