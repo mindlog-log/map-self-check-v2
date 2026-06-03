@@ -1099,3 +1099,89 @@ button, input { font: inherit; }
 .guide-orbit {
   display: none !important;
 }
+/* ===== スマホ表示の縦長すぎるレイアウト調整 ===== */
+
+@media (max-width: 760px) {
+  .app {
+    padding: 0 !important;
+    align-items: flex-start !important;
+  }
+
+  .phone-panel,
+  .result-panel,
+  .observe-panel,
+  .home-panel {
+    width: 100% !important;
+    max-width: 430px !important;
+    min-height: auto !important;
+    margin: 0 auto !important;
+    border-radius: 0 0 24px 24px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .screen {
+    padding-top: 18px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .header-row {
+    margin-bottom: 28px !important;
+  }
+
+  .page-title,
+  .result-title {
+    margin-top: 22px !important;
+    margin-bottom: 22px !important;
+  }
+
+  .page-title h2,
+  .result-title h2 {
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .title-line {
+    margin-top: 8px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .energy-wave {
+    margin-top: 6px !important;
+    margin-bottom: 22px !important;
+    height: 48px !important;
+  }
+
+  .cards-grid.grid-3,
+  .result-panel .cards-grid.grid-3 {
+    gap: 10px !important;
+    margin-top: 10px !important;
+    margin-bottom: 28px !important;
+  }
+
+  .observation-card.three-card {
+    min-height: 250px !important;
+    padding-top: 14px !important;
+    padding-bottom: 18px !important;
+  }
+
+  .observation-card.three-card .card-image {
+    width: 68px !important;
+    height: 68px !important;
+    margin: 12px auto 12px !important;
+  }
+
+  .observation-card.three-card .card-text,
+  .observation-card.three-card div {
+    line-height: 1.45 !important;
+  }
+
+  .outline-button,
+  .back-button,
+  .primary-button,
+  .secondary-button {
+    margin-top: 18px !important;
+    margin-bottom: 0 !important;
+    min-height: 56px !important;
+  }
+}
