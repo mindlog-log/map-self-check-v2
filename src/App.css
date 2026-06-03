@@ -1304,3 +1304,159 @@ button, input { font: inherit; }
     margin-bottom: 0 !important;
   }
 }
+/* ===== TOP・観測準備画面をスマホ1画面寄せに圧縮 ===== */
+
+@media (max-width: 760px) {
+  /* 共通：スマホ時の余白を詰める */
+  .home-panel,
+  .observe-panel {
+    min-height: auto !important;
+    padding-top: 22px !important;
+    padding-bottom: 18px !important;
+  }
+
+  .home-panel .header-row,
+  .observe-panel .header-row {
+    margin-bottom: 18px !important;
+  }
+
+  .home-panel .brand img,
+  .observe-panel .brand img {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .home-panel .brand span,
+  .observe-panel .brand span {
+    font-size: 24px !important;
+  }
+
+  .home-panel .mini-nav,
+  .observe-panel .mini-nav,
+  .home-panel .ghost-button,
+  .observe-panel .ghost-button {
+    width: 62px !important;
+    height: 62px !important;
+    font-size: 12px !important;
+  }
+
+  /* TOP画面 */
+  .home-panel .hero {
+    margin-top: 28px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .home-panel .hero h1 {
+    font-size: 42px !important;
+    line-height: 1.05 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .home-panel .hero p {
+    font-size: 19px !important;
+    line-height: 1.35 !important;
+  }
+
+  .home-panel .energy-wave {
+    height: 38px !important;
+    margin: 8px 0 22px !important;
+  }
+
+  .home-panel .section-title,
+  .home-panel .mode-title {
+    margin: 12px 0 14px !important;
+    font-size: 24px !important;
+    line-height: 1.25 !important;
+  }
+
+  .home-panel .mode-card,
+  .home-panel .option-card {
+    min-height: 82px !important;
+    padding: 12px 16px !important;
+    border-radius: 18px !important;
+  }
+
+  .home-panel .mode-card strong,
+  .home-panel .option-card strong {
+    font-size: 28px !important;
+    line-height: 1.1 !important;
+  }
+
+  .home-panel .mode-card small,
+  .home-panel .option-card small {
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+  }
+
+  .home-panel .primary-button {
+    min-height: 54px !important;
+    margin-top: 16px !important;
+    margin-bottom: 10px !important;
+    font-size: 24px !important;
+  }
+
+  .home-panel .usage {
+    margin-top: 6px !important;
+    font-size: 22px !important;
+  }
+
+  /* 観測準備画面 */
+  .observe-panel .page-title {
+    margin-top: 14px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .observe-panel .page-title h2 {
+    font-size: 40px !important;
+    line-height: 1.05 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .observe-panel .title-line {
+    margin: 8px auto 12px !important;
+  }
+
+  .observe-panel .page-title p {
+    font-size: 22px !important;
+    line-height: 1.45 !important;
+    margin: 0 auto 12px !important;
+  }
+
+  .observe-panel .mode-pill {
+    min-height: 46px !important;
+    padding: 8px 24px !important;
+    margin: 10px auto 18px !important;
+    font-size: 24px !important;
+  }
+
+  .observe-panel .shuffle-button {
+    width: 210px !important;
+    height: 210px !important;
+    min-height: 210px !important;
+    margin: 10px auto 18px !important;
+  }
+
+  .observe-panel .shuffle-button .shuffle-icon {
+    font-size: 42px !important;
+    margin-bottom: 6px !important;
+  }
+
+  .observe-panel .shuffle-button span {
+    font-size: 25px !important;
+    line-height: 1.2 !important;
+  }
+
+  .observe-panel .shuffle-count {
+    margin: 6px 0 14px !important;
+    font-size: 22px !important;
+    line-height: 1.2 !important;
+  }
+
+  .observe-panel .outline-button,
+  .observe-panel .secondary-button {
+    min-height: 54px !important;
+    margin-top: 8px !important;
+    margin-bottom: 0 !important;
+    font-size: 22px !important;
+  }
+}
